@@ -91,7 +91,7 @@ namespace BlazorMovieApp
                 var roleExist = await RoleManager.RoleExistsAsync(roleName);
                 if (!roleExist)
                 {
-                    //create the roles and seed them to the database: Question 1
+                    //create the roles and seed them to the database: 
                     roleResult = await RoleManager.CreateAsync(new IdentityRole(roleName));
                 }
             }
@@ -103,7 +103,7 @@ namespace BlazorMovieApp
                 UserName = "test@hotmail.com",
                 Email = "test@hotmail.com",
             };
-            //Ensure you have these values in your appsettings.json file
+            
             string userPWD = "Test@1234";
             var _user = await UserManager.FindByEmailAsync("test@hotmail.com");
 
@@ -123,7 +123,7 @@ namespace BlazorMovieApp
                 UserName = "test1@hotmail.com",
                 Email = "test1@hotmail.com",
             };
-            //Ensure you have these values in your appsettings.json file
+            
             string userPWD1 = "Test1@1234";
             var _user1 = await UserManager.FindByEmailAsync("test1@hotmail.com");
 
@@ -143,7 +143,7 @@ namespace BlazorMovieApp
                 UserName = "test2@hotmail.com",
                 Email = "test2@hotmail.com",
             };
-            //Ensure you have these values in your appsettings.json file
+            
             string userPWD2 = "Test2@1234";
             var _user2 = await UserManager.FindByEmailAsync("test2@hotmail.com");
 
@@ -163,7 +163,7 @@ namespace BlazorMovieApp
                 UserName = "admin3@hotmail.com",
                 Email = "admin3@hotmail.com",
             };
-            //Ensure you have these values in your appsettings.json file
+            
             string userPWD3 = "Admin3@1234";
             var _user3 = await UserManager.FindByEmailAsync("admin3@hotmail.com");
 
